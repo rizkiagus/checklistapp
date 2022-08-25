@@ -84,6 +84,9 @@ export default {
         headers: {
           Authorization: `Bearer ${cookie.get("token")}`,
         },
+      }).then((response) => {
+        console.log(response);
+        this.$router.go("/");
       });
     },
   },
